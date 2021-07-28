@@ -1,0 +1,207 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* header style start here */
+header{
+    margin-bottom: 50px;
+}
+.navbar{
+    position: relative;
+}
+.right-contract{
+    position: absolute;
+    right: -650px;
+    top: 20px;
+}
+.right-contract li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+
+    align-items: center;
+}
+.navbar li a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0px;
+    color: azure
+
+    
+}
+.navbar li a::after{
+    content: '';
+    background:linear-gradient(to left ,#4aced5,#3fb8e7);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.navbar li a:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 5px 50px;
+    background-color: #42b1e7;
+    border: 1px solid #42b1e7;
+}
+.btn:hover{
+    padding: 5px 50px;
+    background-color: #66c4f3;
+    border: 1px solid #73c6f0;
+}
+   /* Media Query */
+@media only screen and (min-width:755px) and (max-width:991px) {
+    .right-contract{
+        position: absolute;
+        right: -300px;
+        top: 20px;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1081px) {
+    .right-contract{
+        position: absolute;
+        right: -400px;
+        top: 20px;
+    }
+}
+/* banners starts here */
+#service-banner{
+    color: #fff;
+    background: linear-gradient(rgba(24, 220, 255,0.8) ,rgba(24, 220, 255,0.8)) , url(image/banner-bg.jpg)  ;
+    background-size: cover;
+    background-position: center;
+}
+.headings{
+    padding: 48px 10px;
+}
+h1{
+   
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.headings p{
+    width: 70%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn1{
+    background: #f7953a;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 9px 0;
+    width: 242px;
+    text-transform: uppercase;
+}
+.btn1:hover{
+    background: #ee831f;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 9px 0;
+    width: 242px;
+    text-transform: uppercase;
+}
+/* how it works start here */
+.p-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-3{
+
+    position: relative;
+    padding: 0px 5px;
+
+    
+}
+.second::after{
+    content: '';
+    background: url(image/awro1.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    left: -20%;
+    bottom: 20px;
+}
+.last::after{
+    content: '';
+    background: url(image/awro2.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    left: -20%;
+    top: 18px;
+}
+/* customise section start here  */
+.customise-solution{
+background:#45aee8 ;
+}
+.light{
+    font-size: 14px;
+}
+  /* Get Ready section  */
+
+  .get-ready{
+      background: rgba(128, 128, 128, 0.13);
+      height: 240px;
+      text-align: center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  /* tenancy deposit start here  */
+  .tenancy-deposit{
+    background:#45aee8 ;
+    height: 280px;
+  }
+  .buttons{
+      border-radius: 15px;
+      border: 0px solid;
+     font-size: 25px;
+      height: 60px;
+      width: 250px;
+      margin: 15px;
+      background:#ee831f;
+      color: white;
+  }
+  .buttons1{
+    border-radius: 15px;
+    border: 1px solid white;
+   font-size: 25px;
+   color: white;
+    height: 60px;
+    width: 250px;
+    margin: 15px;
+    background:#45aee8 ;
+}
+.buttons1:hover{
+    border-radius: 15px;
+    border: 2px solid rgb(160, 153, 153);
+   font-size: 25px;
+   color: white;
+    height: 60px;
+    width: 250px;
+    margin: 15px;
+    background:#ee831f;
+}
+.stiky{
+    cursor: pointer;
+    position: sticky;
+    width: 450px;
+    height: 70px;
+    background:#f5bb1d;
+    border-radius: 30px;
+    margin-left: 30%;
+}
+footer{
+    background: black;
+    color: white;
+}
